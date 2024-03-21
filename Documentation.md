@@ -1,8 +1,8 @@
 # Steps to Enable Backups and Revert Azure VMs, Databases (DBs), and Blobs for Bold BI backup compatibility 
 
-## 1. Create a Windows Virtual Machine (VM)
+## 1. Create a Linux Virtual Machine (VM)
 
-Begin by creating a Windows virtual machine. For detailed instructions, refer to the link: [Quick Create Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal).
+Begin by creating a Linux virtual machine. For detailed instructions, refer to the link: [Quick Create Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu).
 
 ## 2. Connect to the Windows VM from your Computer
 
