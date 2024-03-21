@@ -4,18 +4,26 @@
 
 Begin by creating a Linux virtual machine. For detailed instructions, refer to the link: [Quick Create Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu).
 
-## 2. Connect to the Windows VM from your Computer
+## 2. Connect to the Linux VM from your Computer
 
-Establish a connection to the Windows VM from your local computer:
-  - Launch the Remote Desktop application on your computer to open a dialog box.
-  - In the Remote Desktop Connection dialog box, input the IP address or hostname of the Windows VM. In the "Show More" option, select the username by entering AzureAD\VMusername.
-  - Click "Connect."
-  - When prompted, enter your credentials (username and password) for the Windows VM.
-  - Once connected, you'll see the Windows VM desktop on your computer.
-  - You can now interact with the Windows VM as if you were physically present.
+Establish a connection to the Linux VM from your local computer:
+  - Open Windows Powershell or Treminal.
+  - Type the following commedend in Powershell or Treminal,"ssh your-username@your-vm-ipaddress".Ex (ssh example@0.0.0.0).
 
 ## 3. Setting Up an Azure Database for PostgreSQL
 
+To install PostgreSQL on Linux, you can use the package manager specific to your distribution. Here are the commands for some common distributions:
+1. **Ubuntu/Debian**:
+   ```bash
+   sudo apt update
+   sudo apt install postgresql postgresql-contrib
+2. **CentOS/RHEL**:
+    ```bash
+    sudo yum install postgresql-server postgresql-contrib
+    sudo postgresql-setup initdb
+    sudo systemctl start postgresql
+    sudo systemctl enable postgresql
+                ---OR---
 To set up a PostgreSQL database on Azure with the desired configurations, follow these detailed steps:
 
 - Click on "+create a resource", navigate to the services list, select "Database", and then choose the PostgreSQL database option.
