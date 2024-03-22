@@ -25,9 +25,6 @@ To install PostgreSQL on Linux, you can use the package manager specific to your
     sudo postgresql-setup initdb
     sudo systemctl start postgresql
     sudo systemctl enable postgresql
-**Note:**
-- If you choose local machine postgrSQL,ignore steps 3 and 6.  
-
 **b. Setting Up an Azure Database for PostgreSQL**   
 To set up a PostgreSQL database on Azure with the desired configurations, follow these detailed steps:
 
@@ -48,7 +45,7 @@ To set up a PostgreSQL database on Azure with the desired configurations, follow
    ![Database overview](images/overview-database.png)
 - For further guidance, you can refer to the following link: [Quickstart: Create an Azure Database for PostgreSQL server in the Azure portal](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal)
 
-## 3. Create a Storage Account on Azure
+## 4. Create a Storage Account on Azure
 
 Follow these steps to create a storage account on Azure:
 
@@ -78,7 +75,7 @@ Follow these steps to create a storage account on Azure:
 
 
 
-## 4. Bold BI Installation
+## 5. Bold BI Installation
 
    - Download different versions of Bold BI from [here](https://www.boldbi.com/account/downloads) and proceed with installation.
    - Refer this [document](https://help.boldbi.com/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#bold-bi-installation-and-deployment-on-ubuntu) to install Bold BI in linux
@@ -90,7 +87,7 @@ Follow these steps to create a storage account on Azure:
    - If you are setting up DNS mapping for your virtual machine (VM), it is essential to also map the snapshot of your VM. Alternatively, if you  are not using mapping, you will need to use the upgrade command in the Snapshot VM and replace the host URL with the IP address of your Snapshot VM.
 
 
-## 5. Create a Snapshot of Virtual Machine
+## 6. Create a Snapshot of Virtual Machine
 
 - Navigate to the Disk in Linux VM and click the disk.
 ![VM-Disk-Settings ](images/VM-Disk-Settings.png)
@@ -103,7 +100,7 @@ Follow these steps to create a storage account on Azure:
   - Enter the name of the VM and select the desired storage size.
   - Allow ports HTTP, HTTPS, and RDP in the inbound rules of the VM's network security group..
 
-## 6.PostgreSQL Backup and Restore in Azure
+## 7.PostgreSQL Backup and Restore in Azure
 
 - Create a PostgreSQL Backup
   - To learn how to back up a PostgreSQL database in Azure, visit: [Backup Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex).
