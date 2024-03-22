@@ -11,7 +11,7 @@ Establish a connection to the Linux VM from your local computer:
   - Type the following commedend in Powershell or Treminal,"ssh your-username@your-vm-ipaddress".Ex (ssh example@0.0.0.0).
 
 ## 3. Setting Up an Azure Database for PostgreSQL
-Setting Up a Local machine for PostgreSQL:-
+**Setting Up a Local machine for PostgreSQL**
 To install PostgreSQL on Linux, you can use the package manager specific to your distribution. Here are the commands for some common distributions:
 1. **Ubuntu/Debian**:
    ```bash
@@ -24,7 +24,7 @@ To install PostgreSQL on Linux, you can use the package manager specific to your
     sudo systemctl start postgresql
     sudo systemctl enable postgresql
 
-Setting Up an Azure Database for PostgreSQL   
+**Setting Up an Azure Database for PostgreSQL**   
 To set up a PostgreSQL database on Azure with the desired configurations, follow these detailed steps:
 
 - Click on "+create a resource", navigate to the services list, select "Database", and then choose the PostgreSQL database option.
