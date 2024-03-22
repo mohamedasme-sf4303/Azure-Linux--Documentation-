@@ -12,6 +12,7 @@ Establish a connection to the Linux VM from your local computer:
 
 ## 3. Setting Up an Azure Database for PostgreSQL
 **Setting Up a Local machine for PostgreSQL**
+
 To install PostgreSQL on Linux, you can use the package manager specific to your distribution. Here are the commands for some common distributions:
 1. **Ubuntu/Debian**:
    ```bash
