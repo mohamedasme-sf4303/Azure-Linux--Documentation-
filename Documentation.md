@@ -26,7 +26,7 @@ To install PostgreSQL on Linux, you can use the package manager specific to your
     sudo systemctl start postgresql
     sudo systemctl enable postgresql
 **Note:**
-- If you choose local machine postgrSQL,ignore steps 4 and 6.  
+- If you choose local machine postgrSQL,ignore steps 3 and 6.  
 
 **b. Setting Up an Azure Database for PostgreSQL**   
 To set up a PostgreSQL database on Azure with the desired configurations, follow these detailed steps:
@@ -48,7 +48,7 @@ To set up a PostgreSQL database on Azure with the desired configurations, follow
    ![Database overview](images/overview-database.png)
 - For further guidance, you can refer to the following link: [Quickstart: Create an Azure Database for PostgreSQL server in the Azure portal](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal)
 
-## 4. Create a Storage Account on Azure
+## 3. Create a Storage Account on Azure
 
 Follow these steps to create a storage account on Azure:
 
