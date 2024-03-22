@@ -77,10 +77,12 @@ Follow these steps to create a storage account on Azure:
 
 ## 4. Bold BI Installation
 
-- Features to be enabled in IIS to run Bold BI in Windows Server OS. Refer to [Bold BI documentation](https://help.boldbi.com/deploying-bold-bi/deploying-in-windows/installation-and-deployment/).
-- You have the option to download various versions of Bold BI from [here](https://www.boldbi.com/account/downloads). you can download 
-- Follow the steps in the [documentation](https://help.boldbi.com/deploying-bold-bi/deploying-in-windows/installation-and-deployment/) to install the BoldBI web application.
-- For guidance on startup configuration for Bold BI, please refer to the following link: [Help.BoldBI.com](https://help.boldbi.com/application-startup/latest/)
+   - Download different versions of Bold BI from [here](https://www.boldbi.com/account/downloads) and proceed with installation.
+   - Refer this [document](https://help.boldbi.com/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#bold-bi-installation-and-deployment-on-ubuntu) to install Bold BI in linux
+   - For guidance on startup configuration for Bold BI, refer to this [link](https://help.boldbi.com/application-startup/latest/).
+
+**Note:**
+    - During the startup configuration, please remember the name of the database as it will be used in resetting the database.
 
 
 ## 5. Create a Snapshot of Virtual Machine
