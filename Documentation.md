@@ -82,8 +82,9 @@ Follow these steps to create a storage account on Azure:
    - For guidance on startup configuration for Bold BI, refer to this [link](https://help.boldbi.com/application-startup/latest/).
 
 **Note:**
-    - During the startup configuration, please remember the name of the database as it will be used in resetting the database.
-    - If you are setting up DNS mapping for your virtual machine (VM), it is essential to also map the snapshot of your VM. Alternatively, if you  are not using mapping, you will need to use the upgrade command in the Snapshot VM and replace the host URL with the IP address of your Snapshot VM.
+
+   - During the startup configuration, please remember the name of the database as it will be used in resetting the database.
+   - If you are setting up DNS mapping for your virtual machine (VM), it is essential to also map the snapshot of your VM. Alternatively, if you  are not using mapping, you will need to use the upgrade command in the Snapshot VM and replace the host URL with the IP address of your Snapshot VM.
 
 
 ## 5. Create a Snapshot of Virtual Machine
