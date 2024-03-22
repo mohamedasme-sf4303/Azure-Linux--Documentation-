@@ -11,7 +11,7 @@ Establish a connection to the Linux VM from your local computer:
   - Type the following commedend in Powershell or Treminal,"ssh your-username@your-vm-ipaddress".Ex (ssh example@0.0.0.0).
 
 ## 3. Setting Up an Azure Database for PostgreSQL
-**Setting Up a Local machine for PostgreSQL**
+**a. Setting Up a Local machine for PostgreSQL**
 
 To install PostgreSQL on Linux, you can use the package manager specific to your distribution. Here are the commands for some common distributions:
 1. **Ubuntu/Debian**:
@@ -25,7 +25,7 @@ To install PostgreSQL on Linux, you can use the package manager specific to your
     sudo systemctl start postgresql
     sudo systemctl enable postgresql
 
-**Setting Up an Azure Database for PostgreSQL**   
+**b. Setting Up an Azure Database for PostgreSQL**   
 To set up a PostgreSQL database on Azure with the desired configurations, follow these detailed steps:
 
 - Click on "+create a resource", navigate to the services list, select "Database", and then choose the PostgreSQL database option.
@@ -83,11 +83,12 @@ Follow these steps to create a storage account on Azure:
 
 **Note:**
     - During the startup configuration, please remember the name of the database as it will be used in resetting the database.
+    - If you are setting up DNS mapping for your virtual machine (VM), it is essential to also map the snapshot of your VM. Alternatively, if you  are not using mapping, you will need to use the upgrade command in the Snapshot VM and replace the host URL with the IP address of your Snapshot VM.
 
 
 ## 5. Create a Snapshot of Virtual Machine
 
-- Navigate to the Disk in Windows VM and click the disk.
+- Navigate to the Disk in Linux VM and click the disk.
 ![VM-Disk-Settings ](images/VM-Disk-Settings.png)
 - Click on '+ Create snapshot' in the disk settings to create a snapshot of your Virtual Machine.
 - Enter the Snapshot name and change the snapshot type to full or incremental.
@@ -96,7 +97,7 @@ Follow these steps to create a storage account on Azure:
 - Creating a virtual machine (VM) from a snapshot is similar to creating a normal VM, with the main difference being that you start from an existing snapshot instead of a blank VM template. Here are the steps to follow:
   - Click on the "+Create VM" button.
   - Enter the name of the VM and select the desired storage size.
-  - Allow ports HTTP, HTTPS, and RDP in the inbound rules of the VM's network security group.Select the license type as "Windows Server" when prompted.
+  - Allow ports HTTP, HTTPS, and RDP in the inbound rules of the VM's network security group..
 
 ## 6.PostgreSQL Backup and Restore in Azure
 
@@ -112,5 +113,5 @@ Follow these steps to create a storage account on Azure:
   ![Databse restoration](images/basic-setting-restore.png)
 
 - Using the Restored Database
-  - To use the restored database, you'll need to reset the database on your Virtual Machine. Detailed steps can be found in the following documentation: [Reset Application Database on Windows](https://help.boldbi.com/utilities/bold-bi-command-line-tools/reset-application-database/#windows)
+  - To use the restored database, you'll need to reset the database on your Virtual Machine. Detailed steps can be found in the following documentation: [Reset Application Database on Linux](https://help.boldbi.com/utilities/bold-bi-command-line-tools/reset-application-database/#linux)
 
