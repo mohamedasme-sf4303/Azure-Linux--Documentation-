@@ -10,8 +10,9 @@ Establish a connection to the Linux VM from your local computer:
   - Open Windows Powershell or Terminal.
   - Use the following command:`ssh your-username@your-vm-ipaddress`.Example: ssh example@0.0.0.0.
 
-## 3. Setting Up PostgreSQL
-   The PostgreSQL setting up is two way.
+### 3. Set up PostgreSQL Database
+If you want to set up a PostgreSQL Database on Azure VM, follow the step `a`. If you prefer using an Azure PostgreSQL, follow the step `b`.
+
 
 **a. Setting Up a Local machine for PostgreSQL**  
 To install PostgreSQL on Linux, you can use the package manager specific to your distribution. Here are the commands for some common distributions:
@@ -80,8 +81,9 @@ Follow these steps to create a storage account on Azure:
    - Download different versions of Bold BI from [here](https://www.boldbi.com/account/downloads) and proceed with installation.
    - Refer this [document](https://help.boldbi.com/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#bold-bi-installation-and-deployment-on-ubuntu) to install Bold BI in linux
    - For guidance on startup configuration for Bold BI, refer to this [link](https://help.boldbi.com/application-startup/latest/).
-
-## 6. Create a Snapshot of Virtual Machine
+   - For guidance on startup configuration for Bold BI, refer to this [link](https://help.boldbi.com/application-startup/latest/).
+## To Enable Backup compatibility of Bold BI application
+## 1. Create a Snapshot of Virtual Machine
 
 - Navigate to the Disk in Linux VM and click the disk.
 ![VM-Disk-Settings ](images/VM-Disk-Settings.png)
@@ -94,7 +96,7 @@ Follow these steps to create a storage account on Azure:
   - Enter the name of the VM and select the desired storage size.
   - Allow ports HTTP, HTTPS, and RDP in the inbound rules of the VM's network security group..
 
-## 7.PostgreSQL Backup and Restore in Azure
+## 2.PostgreSQL Backup and Restore in Azure
 
 - Create a PostgreSQL Backup
   - To learn how to back up a PostgreSQL database in Azure, visit: [Backup Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex).
@@ -109,4 +111,6 @@ Follow these steps to create a storage account on Azure:
 
 - Using the Restored Database
   - To use the restored database, you'll need to reset the database on your Virtual Machine. Detailed steps can be found in the following documentation: [Reset Application Database on Linux](https://help.boldbi.com/utilities/bold-bi-command-line-tools/reset-application-database/#linux)
+  - If your original VM was configured using DNS mapping, after restoring your snapshot VM, map the snapshot VM's IP address to the previously created domain.Alternatively, if you are not using mapping, you will need to use the upgrade command in the Snapshot VM and replace the host URL with the IP address of your Snapshot VM.
+   -  Once the mapping is complete and the database is reset, stop or delete the original VM and database. Finally, access the application in the browser using the domain name.
 
