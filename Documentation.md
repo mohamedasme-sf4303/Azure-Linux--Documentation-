@@ -1,5 +1,10 @@
 # Steps to Enable Backups and Revert Azure VMs, Databases (DBs), and Blobs for Bold BI backup compatibility 
 
+| SEO Details       |                                                                     |
+|-------------------|---------------------------------------------------------------------|
+| Meta Title        | Installing and Enabling Backup Compatibility for Bold BI on Azure Linux VM |
+| Meta Description  | Learn how to install Bold BI on Azure Linux VM instance and enable backup compatibility with easy-to-follow steps. Ensure data protection and disaster recovery for your Bold BI installation. |
+
 ## 1. Create a Linux Virtual Machine (VM)
 
 Begin by creating a Linux virtual machine. For detailed instructions, refer to the link: [Quick Create Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu).
@@ -11,7 +16,7 @@ Establish a connection to the Linux VM from your local computer:
   - Use the following command:`ssh your-username@your-vm-ipaddress`.Example: ssh example@0.0.0.0.
 
 ### 3. Set up PostgreSQL Database
-If you want to set up a PostgreSQL Database on Azure VM, follow the step `a`. If you prefer using an Azure PostgreSQL, follow the step `b`.
+If you want to set up a PostgreSQL Database on Azure VM, follow the step `a`. If you prefer using an Azure managed PostgreSQL, follow the step `b`.
 
 
 **a. Setting Up a Local machine for PostgreSQL**  
@@ -26,6 +31,10 @@ To install PostgreSQL on Linux, you can use the package manager specific to your
     sudo postgresql-setup initdb
     sudo systemctl start postgresql
     sudo systemctl enable postgresql
+    **Information:**
+  - For installing a MySQL database in an Azure Linux VM, refer to the steps outlined in this [guide](https://www.devart.com/dbforge/mysql/how-to-install-mysql-on-linux/).
+  - To install an MS SQL database in an Azure Linux VM, follow the instructions provided in this [guide](https://phoenixnap.com/kb/sql-server-linux).
+
 **b. Setting Up an Azure Database for PostgreSQL**   
 To set up a PostgreSQL database on Azure with the desired configurations, follow these detailed steps:
 
@@ -45,6 +54,9 @@ To set up a PostgreSQL database on Azure with the desired configurations, follow
    - Use the server name, username, and password you chose during setup to connect to your new database.
    ![Database overview](images/overview-database.png)
 - For further guidance, you can refer to the following link: [Quickstart: Create an Azure Database for PostgreSQL server in the Azure portal](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server-portal)
+
+**Information:** 
+  - To create a MySQL in Azure, follow the instructions in this [link](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/quickstart-create-server-portal).
 
 ## 4. Create a Storage Account on Azure
 
@@ -81,7 +93,7 @@ Follow these steps to create a storage account on Azure:
    - Download different versions of Bold BI from [here](https://www.boldbi.com/account/downloads) and proceed with installation.
    - Refer this [document](https://help.boldbi.com/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#bold-bi-installation-and-deployment-on-ubuntu) to install Bold BI in linux
    - For guidance on startup configuration for Bold BI, refer to this [link](https://help.boldbi.com/application-startup/latest/).
-   - For guidance on startup configuration for Bold BI, refer to this [link](https://help.boldbi.com/application-startup/latest/).
+   
 ## To Enable Backup compatibility of Bold BI application
 ## 1. Create a Snapshot of Virtual Machine
 
