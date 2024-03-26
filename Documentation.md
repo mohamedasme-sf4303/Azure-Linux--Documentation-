@@ -26,7 +26,7 @@ To install PostgreSQL on Linux, you can use the package manager specific to your
     sudo postgresql-setup initdb
     sudo systemctl start postgresql
     sudo systemctl enable postgresql
-    **Information:**
+**Information:**
   - For installing a MySQL database in an Azure Linux VM, refer to the steps outlined in this [guide](https://www.devart.com/dbforge/mysql/how-to-install-mysql-on-linux/).
   - To install an MS SQL database in an Azure Linux VM, follow the instructions provided in this [guide](https://phoenixnap.com/kb/sql-server-linux).
 
