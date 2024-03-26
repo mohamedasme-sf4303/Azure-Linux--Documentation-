@@ -9,7 +9,7 @@
 
 Begin by creating a Linux virtual machine. For detailed instructions, refer to the link: [Quick Create Portal](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal?tabs=ubuntu).
 
-## 2. Connect to the Linux VM from your Computer
+## 2. Connect to the Linux VM from your Machine
 ## 3. Set up PostgreSQL Database
 If you want to set up a PostgreSQL Database on Azure VM, follow the step `a`. If you prefer using an Azure managed PostgreSQL, follow the step `b`.
 
