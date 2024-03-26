@@ -7,8 +7,8 @@ Begin by creating a Linux virtual machine. For detailed instructions, refer to t
 ## 2. Connect to the Linux VM from your Computer
 
 Establish a connection to the Linux VM from your local computer:
-  - Open Windows Powershell or Treminal.
-  - Use the following command:"ssh your-username@your-vm-ipaddress".Example: ssh example@0.0.0.0.
+  - Open Windows Powershell or Terminal.
+  - Use the following command:`ssh your-username@your-vm-ipaddress`.Example: ssh example@0.0.0.0.
 
 ## 3. Setting Up PostgreSQL
    The PostgreSQL setting up is two way.
@@ -28,7 +28,7 @@ To install PostgreSQL on Linux, you can use the package manager specific to your
 **b. Setting Up an Azure Database for PostgreSQL**   
 To set up a PostgreSQL database on Azure with the desired configurations, follow these detailed steps:
 
-- Click on "+create a resource", navigate to the services list, select "Database", and then choose the PostgreSQL database option.
+- Click on `+create a resource`, navigate to the services list, select "Database", and then choose the PostgreSQL database option.
 
 ![Create Resource](images/create-resource.png)
 ![Azure Database](images/search-database.png)
@@ -80,12 +80,6 @@ Follow these steps to create a storage account on Azure:
    - Download different versions of Bold BI from [here](https://www.boldbi.com/account/downloads) and proceed with installation.
    - Refer this [document](https://help.boldbi.com/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#bold-bi-installation-and-deployment-on-ubuntu) to install Bold BI in linux
    - For guidance on startup configuration for Bold BI, refer to this [link](https://help.boldbi.com/application-startup/latest/).
-
-**Note:**
-
-   - During the startup configuration, please remember the name of the database as it will be used in resetting the database.
-   - If you are setting up DNS mapping for your virtual machine (VM), it is essential to also map the snapshot of your VM. Alternatively, if you  are not using mapping, you will need to use the upgrade command in the Snapshot VM and replace the host URL with the IP address of your Snapshot VM.
-
 
 ## 6. Create a Snapshot of Virtual Machine
 
